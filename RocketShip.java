@@ -24,22 +24,23 @@ public class RocketShip {
      */
     public static void printNoseCone() {
         
-        for (int i = 1; i <= ROCKET_SIZE; i ++) {
+        for (int i = 0; i <= ROCKET_SIZE; i ++) {
             
             
-            for (int h = 1; h <= (ROCKET_SIZE + 1) - i; h ++) {
+            for (int h = 0; h < (ROCKET_SIZE + 1) - i; h ++) {
                 System.out.print(" ");
             }
 
-            for (int j = 1; j <= i; j++) {
+            for (int j = 0; j < i; j++) {
             System.out.print("/");
             }
             
-            for (int k = 1; k <= i; k += 3) {
-                System.err.print("**");
+            /* I really have no idea why this works... */
+            for (int k = 0; k < i; k += 8) {
+                System.out.print("**");
             }
 
-            for (int l = 1; l <= i; l++) {
+            for (int l = 0; l < i; l++) {
                 System.out.print("\\");
             }
             System.out.println();
@@ -71,15 +72,17 @@ public class RocketShip {
         
         System.out.print("|");
 
-        for (int i = 1; i <= ROCKET_SIZE - 1; i ++) {
+        for (int i = 0; i <= ROCKET_SIZE - 2; i ++) {
             System.out.print("./\\.");
         }
+
+        
 
         System.out.print("|");
         System.out.println();
 
         System.out.print("|");
-        for (int j = 1; j <= ROCKET_SIZE + 1; j ++) {
+        for (int j = 0; j <= ROCKET_SIZE; j ++) {
             System.out.print("/\\");
         }
 
@@ -96,7 +99,7 @@ public class RocketShip {
         
         System.out.print("|");
 
-        for (int i = 1; i <= ROCKET_SIZE + 1; i ++) {
+        for (int i = 0; i <= ROCKET_SIZE; i ++) {
             System.out.print("\\/");
         }
         System.out.print("|");
@@ -104,7 +107,7 @@ public class RocketShip {
         System.out.println();
 
         System.out.print("|");
-        for (int j = 1; j <= ROCKET_SIZE - 1; j ++) {
+        for (int j = 0; j <= ROCKET_SIZE - 2; j ++) {
             System.out.print(".\\/.");
         }
 
@@ -121,13 +124,14 @@ public class RocketShip {
         
         System.out.print("+");
 
-        for (int i = 1; i <= ROCKET_SIZE + 1; i++) {
+        for (int i = 0; i <= ROCKET_SIZE; i++) {
             System.out.print("=*");
         }
 
         System.out.print("+");
         System.out.println();
         /* System.out.println("An edge should be here."); */
+        
     }
 }
 
