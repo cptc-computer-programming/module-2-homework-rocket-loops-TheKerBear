@@ -69,9 +69,16 @@ public class RocketShip {
      */
     public static void printDiamondTop() {
         
+        System.out.print("|");
 
+        for (int i = 1; i <= ROCKET_SIZE - 1; i ++) {
+            System.out.print("./\\.");
+        }
 
-        System.out.println("A diamond top should be here.");
+        System.out.print("|");
+        System.out.println();
+
+        /* System.out.println("A diamond top should be here."); */
     }
 
     /**
