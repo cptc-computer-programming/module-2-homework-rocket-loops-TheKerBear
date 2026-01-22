@@ -27,7 +27,7 @@ public class RocketShip {
         for (int i = 1; i <= ROCKET_SIZE; i ++) {
             
             
-            for (int h = 1; h <= ROCKET_SIZE - i; h ++) {
+            for (int h = 1; h <= (ROCKET_SIZE + 1) - i; h ++) {
                 System.out.print(" ");
             }
 
@@ -45,7 +45,7 @@ public class RocketShip {
             System.out.println();
         }
         
-        System.out.println("A nose cone should be here.");
+        /* System.out.println("A nose cone should be here."); */
         
     }
 
@@ -68,7 +68,9 @@ public class RocketShip {
      * Print the top half of two diamonds between vertical lines.
      */
     public static void printDiamondTop() {
-        // your code goes here.
+        
+
+
         System.out.println("A diamond top should be here.");
     }
 
@@ -84,7 +86,37 @@ public class RocketShip {
      * Print +=*=*=*...=+ to fit the width of the rocket.
      */
     public static void printEdge() {
-        // your code goes here.
-        System.out.println("An edge should be here.");
+        
+        System.out.print("+");
+
+        for (int i = 1; i <= ROCKET_SIZE + 1; i++) {
+            System.out.print("=*");
+        }
+
+        System.out.print("+");
+        System.out.println();
+        /* System.out.println("An edge should be here."); */
     }
 }
+
+/*
+
+   /**\
+  //**\\
+ ///**\\\
++=*=*=*=*+
+|./\../\.|
+|/\/\/\/\|
+|\/\/\/\/|
+|.\/..\/.|
++=*=*=*=*+
+|\/\/\/\/|
+|.\/..\/.|
+|./\../\.|
+|/\/\/\/\|
++=*=*=*=*+
+   /**\
+  //**\\
+ ///**\\\
+
+ */
