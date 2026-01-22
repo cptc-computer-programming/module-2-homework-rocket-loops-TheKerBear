@@ -78,6 +78,14 @@ public class RocketShip {
         System.out.print("|");
         System.out.println();
 
+        System.out.print("|");
+        for (int j = 1; j <= ROCKET_SIZE + 1; j ++) {
+            System.out.print("/\\");
+        }
+
+        System.out.print("|");
+        System.out.println();
+
         /* System.out.println("A diamond top should be here."); */
     }
 
@@ -85,8 +93,25 @@ public class RocketShip {
      * Print the bottom half of two diamonds between vertical lines.
      */
     public static void printDiamondBottom() {
-        // your code goes here.
-        System.out.println("A diamond bottom should be here.");
+        
+        System.out.print("|");
+
+        for (int i = 1; i <= ROCKET_SIZE + 1; i ++) {
+            System.out.print("\\/");
+        }
+        System.out.print("|");
+
+        System.out.println();
+
+        System.out.print("|");
+        for (int j = 1; j <= ROCKET_SIZE - 1; j ++) {
+            System.out.print(".\\/.");
+        }
+
+        System.out.print("|");
+        System.out.println();
+
+        /* System.out.println("A diamond bottom should be here."); */
     }
 
     /**
